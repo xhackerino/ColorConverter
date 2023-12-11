@@ -11,7 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitLabMergeRequestFiltersHistory">{
   &quot;lastFilter&quot;: {
@@ -88,6 +88,7 @@
       <workItem from="1702250864100" duration="1558000" />
       <workItem from="1702252432204" duration="11000" />
       <workItem from="1702252460015" duration="389000" />
+      <workItem from="1702252902552" duration="172000" />
     </task>
     <servers />
   </component>

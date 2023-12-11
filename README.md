@@ -29,7 +29,9 @@ backend/ contains the Node.js backend server.
 
 
 ## Contact
-If you have any questions or need further assistance, please feel free to contact us at ilia.rakin@student.lab.fi.
+If you have any questions or need further assistance, please feel free to contact me at <a href="mailto:ilia.rakin@student.lab.fi">ilia.rakin@student.lab.fi</a>
 
 Enjoy converting colors with my converter!
+
+# Copyright: Rakin Ilia
 
