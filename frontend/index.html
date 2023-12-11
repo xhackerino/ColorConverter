@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>Color Converters</title>
+</head>
+<body>
+<div class="instructions-container">
+    <h2>How to Use the App</h2>
+    <p>Enter a Hex color code or RGB values to convert between them. Click the "Convert" button to see the results.</p>
+
+</div>
+<div class="input-hex-container">
+    <h2>Hex to RGB Converter</h2>
+    <p> - Converter tool. Converting HEX to RGB. Example format of HEX value: #ff0000</p>
+    <p> - Tool not saving any data</p>
+
+    <form>
+        <form>
+            <input
+                    type="text"
+                    placeholder="Enter Hex Color"
+                    id="hexInput"
+            />
+            <button type="button" id="hexConvertButton">Convert</button>
+        </form>
+        <div class="rgb-value-container" id="rgbResult">
+            <!-- RGB Value will be displayed here -->
+        </div>
+</div>
+
+<div class="input-rgb-container">
+    <h2>RGB to HEX Converter</h2>
+    <p> - Converter tool. Use Values from 0 - 255 in each input box to get HEX value.</p>
+    <p>- Convert tool also save RGB and HEX value to data base. Data can be accessed with GET Values From Database
+        form.</p>
+    <form>
+
+
+        <form>
+            <input
+                    type="number"
+                    placeholder="Red"
+                    id="redInput"
+            />
+            <input
+                    type="number"
+                    placeholder="Green"
+                    id="greenInput"
+            />
+            <input
+                    type="number"
+                    placeholder="Blue"
+                    id="blueInput"
+            />
+            <button type="button" id="rgbConvertButton">Convert</button>
+        </form>
+
+        <div class="hex-value-container" id="hexResult">
+            <!-- HEX Value will be displayed here -->
+        </div>
+
+        <div id="errorContainer">
+            <!-- Error message will be displayed here -->
+        </div>
+</div>
+
+<div class="input-rgb-cmyk-container">
+    <h2>RGB to CMYK Converter</h2>
+    <p> - Converter tool. Use Values from 0 - 255 in each input box to get CMYK value.</p>
+    <p>- Convert tool also save RGB and CMYK value to data base. Data can be accessed with GET Values From Database
+        form.</p>
+    <form>
+        <input
+                type="number"
+                placeholder="Red"
+                id="redInputCmyk"
+        />
+        <input
+                type="number"
+                placeholder="Green"
+                id="greenInputCmyk"
+        />
+        <input
+                type="number"
+                placeholder="Blue"
+                id="blueInputCmyk"
+        />
+        <button type="button" id="convertRgbButton">Convert</button>
+    </form>
+    <div class="cmyk-value-container" id="cmykResult">
+        <!-- CMYK Value will be displayed here -->
+    </div>
+</div>
+<div class="input-cmyk-rgb-container">
+    <h2>CMYK to RGB Converter</h2>
+    <p> - Converter tool. Use Values from 0 - 100 in each input box to get RGB value.</p>
+
+    <form>
+        <input
+                type="number"
+                placeholder="Cyan"
+                id="cyanInput"
+        />
+        <input
+                type="number"
+                placeholder="Magenta"
+                id="magentaInput"
+        />
+        <input
+                type="number"
+                placeholder="Yellow"
+                id="yellowInput"
+        />
+        <input
+                type="number"
+                placeholder="Key"
+                id="blackInput"
+        />
+        <button type="button" id="convertCmykButton">Convert</button>
+    </form>
+    <div class="rgb-from-cmyk-value-container" id="rgbFromCmykResult">
+        <!-- CMYK Value will be displayed here -->
+    </div>
+</div>
+<div class="database-info">
+    <h2>Get Values From Database</h2>
+    <p> - Get values from database. Data is saved to database when using RGB to HEX.</p>
+    <p> - Data can be downloaded as .csv file.</p>
+    <form>
+        <button type="button" id="dataBaseButton">Show Data</button>
+        <button type="button" id="DownloadButton">Download .csv</button>
+    </form>
+    <div id="dataContainer"></div> <!-- Container for displaying data -->
+</div>
+
+<!-- Include the JavaScript file -->
+<script src="index.js"></script>
+
+</body>
+</html>
+
+
+</head>
+

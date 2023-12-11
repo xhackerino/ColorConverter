@@ -1,0 +1,315 @@
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+}
+
+/*Containers styles*/
+.instructions-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    width: 500px;
+}
+
+/*RGB to hex container*/
+.input-rgb-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    width: 500px;
+}
+
+/*HEX to RGB container*/
+.input-hex-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    width: 500px;
+}
+
+/*CMYK to RGB container*/
+.input-cmyk-rgb-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    width: 500px;
+}
+
+/*RGB to CMYK container*/
+.input-rgb-cmyk-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    width: 500px;
+}
+
+/*Data base info container*/
+.database-info {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    width: 500px;
+}
+
+
+/*H2 text styles*/
+h2 {
+    color: #ff4500; /* Red color for headings */
+}
+
+#hexInput {
+    padding: 5px;
+    margin: 5px;
+    background-color: #555;
+    color: #fff;
+    border: 1px solid #777;
+    border-radius: 3px;
+    width: auto;
+    height: 20px;
+}
+
+/*Input fields for RGB to HEX container*/
+#redInput, #greenInput, #blueInput {
+    padding: 5px;
+    margin: 5px;
+    background-color: #555;
+    color: #fff;
+    border: 1px solid #777;
+    border-radius: 3px;
+    width: auto;
+    height: 20px;
+}
+
+/*Input fields for CMYK to RGB container*/
+#cyanInput, #magentaInput, #yellowInput, #blackInput {
+    padding: 5px;
+    margin: 5px;
+    background-color: #555;
+    color: #fff;
+    border: 1px solid #777;
+    border-radius: 3px;
+    width: auto;
+    height: 20px;
+}
+
+/*Input fields for RGB to CMYK container*/
+#redInputCmyk, #greenInputCmyk, #blueInputCmyk {
+    padding: 5px;
+    margin: 5px;
+    background-color: #555;
+    color: #fff;
+    border: 1px solid #777;
+    border-radius: 3px;
+    width: auto;
+    height: 20px;
+}
+
+
+/* Add styles for the Hex to RGB Converter button */
+#hexConvertButton {
+    padding: 8px 15px;
+    margin: 5px;
+    background-color: #ff003c; /* Red color for buttons */
+    color: #5d2323;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#hexConvertButton:hover {
+    background-color: #cc3700; /* Darker red on hover */
+}
+
+/* Add styles for the RGB to Hex Converter button */
+#rgbConvertButton {
+    padding: 8px 15px;
+    margin: 5px;
+    background-color: #003cff; /* Blue color for buttons */
+    color: #23235d;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#rgbConvertButton:hover {
+    background-color: #001acc; /* Darker blue on hover */
+}
+
+/* Add styles for the Get Data from Database button */
+#dataBaseButton {
+    padding: 8px 15px;
+    margin: 5px;
+    background-color: #4caf50; /* Green color for buttons */
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#DownloadButton {
+    padding: 8px 15px;
+    margin: 5px;
+    background-color: #216323; /* Green color for buttons */
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#dataBaseButton:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Add styles for the CMYK to RGB and RGB to CMYK Converter buttons */
+#convertCmykButton, #convertRgbButton {
+    padding: 8px 15px;
+    margin: 5px;
+    background-color: #8a2be2; /* Choose suitable colors */
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#convertCmykButton:hover, #convertRgbButton:hover {
+    background-color: #7b26d1; /* Darker shade for hover */
+}
+
+
+#hexResult {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #555;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    width: 200px;
+}
+
+#hexResult::before {
+    content: "HEX Result";
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #00ff00; /* Green color for label */
+}
+
+/* Result of HEX TO RGB convert*/
+#rgbResult {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #555;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    width: 200px;
+}
+
+#rgbResult::before {
+    content: "RGB Result";
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #ff4500;
+}
+
+#cmykResult {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #555;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    width: 200px;
+}
+
+#cmykResult::before {
+    content: "CMYK Result";
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #8a2be2;
+}
+
+#rgbFromCmykResult {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #555;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    width: 200px;
+}
+
+#rgbFromCmykResult::before {
+    content: "RGB Result";
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #ff4500;
+}
+
+
+/* Error container specs */
+
+/* Error container specs */
+
+
+/* Display data inside data container */
+#dataContainer {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #555;
+    color: #fff;
+    border: 1px solid #777;
+    border-radius: 3px;
+    height: 200px;
+    width: 210px;
+    overflow: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    margin-top: 50px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 50px;
+
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}
